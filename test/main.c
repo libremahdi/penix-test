@@ -45,3 +45,14 @@ int main ()
     ptst_run(test_2);
     return 0;
 }
+
+/*
+==167331== 
+==167331== HEAP SUMMARY:
+==167331==     in use at exit: 0 bytes in 0 blocks
+==167331==   total heap usage: 26 allocs, 26 frees, 1,570 bytes allocated
+==167331== 
+==167331== All heap blocks were freed -- no leaks are possible
+==167331== 
+==167331== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+*/
