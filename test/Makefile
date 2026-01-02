@@ -1,2 +1,2 @@
 main:
-	clang -I../include/ -I../src/lib/ ../src/*.c main.c -o output ; ./output
+	clang -g -I../include/ -I../src/lib/ -I../src/ ../src/*.c main.c -o output
