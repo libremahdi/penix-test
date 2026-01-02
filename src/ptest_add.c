@@ -15,4 +15,3 @@ void ptst_add(ptst_result *init, char *details) {
     init->scenario[init->next_scenario]->failds = 0;
     ++init->next_scenario;
 }
-
