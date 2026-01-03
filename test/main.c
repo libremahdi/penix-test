@@ -20,6 +20,9 @@ ptst_result *test_1() {
 
 ptst_result *test_2() {
     ptst_result *result = ptst_init("Fail Test");
+
+    ptst_comment (result, "This is hint/comment text");
+
     ptst_add (result, "int numbers");
     ptst_test (result, 1, 2);
     ptst_test (result, 2, 5);
