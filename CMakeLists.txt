@@ -24,6 +24,7 @@ set(SOURCES
     src/ptest_init.c
     src/ptest_run.c
     src/ptest_test.c
+    src/ptest_comment.c
 )
 
 # Create Static and Shared library targets
