@@ -16,8 +16,8 @@ void ptst_run(ptst_result *(*ptt_fnc)()) {
     for (register unsigned int in_1=0 ; in_1<result->next_scenario ; ++in_1) {
         if (result->scenario[in_1]->failds != 0) {
             printf (RED"[ FAIL ]: "RESET);
-            printf (YELLOW"%s \n"RESET, result->topic);
-            printf ("Faild: %d | %s\n\n", result->scenario[in_1]->failds, result->scenario[in_1]->details);
+            printf (YELLOW"%s \n"RESET, result->scenario[in_1]->details);
+            printf ("          Faild: %d\n", result->scenario[in_1]->failds);
         }
         else {
             printf (GREEN"[ PASS ]: "RESET);
