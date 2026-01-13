@@ -1,5 +1,5 @@
 #ifndef PARABYTE_PTEST
-#define PARABYTE_PTEST "1.0.0"
+#define PARABYTE_PTEST "1.0.1"
 
 #define GREEN   "\033[32m"
 #define RED     "\033[31m"
