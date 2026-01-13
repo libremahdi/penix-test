@@ -1,3 +1,5 @@
+#pragma once
+
 void internal_test_fnc_int(ptst_result *, int, int);
 void internal_test_fnc_arr(ptst_result *, char*, char*);
 void internal_test_fnc_dbl(ptst_result *, double, double);
