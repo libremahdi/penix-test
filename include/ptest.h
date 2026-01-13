@@ -1,6 +1,12 @@
 #ifndef PARABYTE_PTEST
 #define PARABYTE_PTEST "1.0.0"
 
+#define GREEN   "\033[32m"
+#define RED     "\033[31m"
+#define YELLOW  "\033[33m"
+#define PINK    "\033[35m"
+#define RESET   "\033[0m"
+
 struct PTEST_SCENARIO;
 typedef struct PTEST_RESAULT ptst_result;
 
