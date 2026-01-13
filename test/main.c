@@ -33,10 +33,13 @@ ptst_result *test_2() {
 
 
     ptst_add (result, "Char* (arr)");
+    ptst_comment (result, "This is hint/comment text for last ptst_add");
+
     ptst_test (result, "Hello", "Hi");
     ptst_test (result, "Hello there!", "Hi there!");
 
     ptst_add (result, "Use Fail Function");
+
     ptst_fail(result);
 
     return result;
