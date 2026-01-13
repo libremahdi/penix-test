@@ -11,7 +11,8 @@ void ptst_run(ptst_result *(*ptt_fnc)()) {
     for (unsigned int in_1=0 ; in_1<result->next_scenario ; ++in_1) {
         
         for (unsigned int in_2=0 ; in_2<result->scenario[in_1]->comment_size ; ++in_2) {
-            printf ("\n/******** "PINK"%s "RESET"********/\n", result->scenario[in_1]->comment[result->scenario[in_2]->comment_size]);
+            printf ("/******** "PINK"%s "RESET"********/\n", result->scenario[in_1]->comment[in_2]);
+            free (result->scenario[in_1]->comment[in_2]);
         }
 
         if (result->scenario[in_1]->failds != 0) {
@@ -25,6 +26,7 @@ void ptst_run(ptst_result *(*ptt_fnc)()) {
         }
         
         free(result->scenario[in_1]->details);
+        free(result->scenario[in_1]->comment);
         free(result->scenario[in_1]);
     }
 

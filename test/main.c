@@ -1,4 +1,7 @@
 #include "ptest.h"
+#include "struct.h"
+#include "ptest.h"
+
 #include <stdio.h>
 
 ptst_result *test_1() {
@@ -20,20 +23,24 @@ ptst_result *test_1() {
 
 ptst_result *test_2() {
     ptst_result *result = ptst_init("Fail Test");
+    ptst_comment (result, "Comment 1");
 
-    ptst_comment (result, "This is hint/comment text");
 
     ptst_add (result, "int numbers");
+    ptst_comment (result, "Comment 2");
+
     ptst_test (result, 1, 2);
     ptst_test (result, 2, 5);
 
     ptst_add (result, "float/double numbers");
+    ptst_comment (result, "Comment 3");
     ptst_test (result, 1.1, 1.2);
     ptst_test (result, 3.1415, 3.14);
 
 
     ptst_add (result, "Char* (arr)");
-    ptst_comment (result, "This is hint/comment text for last ptst_add");
+    ptst_comment (result, "Comment 4");
+    ptst_comment (result, "Comment 5");
 
     ptst_test (result, "Hello", "Hi");
     ptst_test (result, "Hello there!", "Hi there!");
