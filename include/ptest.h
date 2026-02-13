@@ -1,3 +1,7 @@
+/* Copyright (C) 2025-2026 Mahdi Hosseini Asaad
+   See LICENSE for more information.
+*/
+
 #ifndef PARABYTE_PTEST
 #define PARABYTE_PTEST "1.0.1"
 
